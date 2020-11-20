@@ -20,7 +20,15 @@ console.log(somma);
 //Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 if (somma % 2 == 0){
     console.log("numero pari");
+    var pari = "pari"
 }else {
     console.log("numero dispari");
+    var dispari = "dispari"
 }
 //Dichiariamo chi ha vinto.
+if (pari == sceltaUtente || dispari == sceltaUtente){
+    console.log("Complimenti hai vinto");
+}else{
+    console.log("Mi dispiace hai perso");
+}
+
