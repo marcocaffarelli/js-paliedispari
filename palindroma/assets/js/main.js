@@ -1,6 +1,7 @@
 //Chiedere all’utente di inserire una parola
-var parolaUtente = prompt("Inserisci una parola")
-//console.log(parolaUtente);
+var parolaUtente = prompt("Inserisci una parola");
+parolaUtente = parolaUtente.toLowerCase();
+console.log(parolaUtente);
 
 //Creare una funzione per capire se la parola inserita è palindroma
 //funzione controllo 
@@ -9,10 +10,10 @@ function ctrlPalindroma(parola){
     if (parola === parola.split("").reverse().join("")){
     return true;
     }
-}
+};
 
-var ctrlParola = ctrlPalindroma(parolaUtente)
+var ctrlParola = ctrlPalindroma(parolaUtente);
 
 if (ctrlParola) {
-    console.log("la parola è palindroma");
-}
+    console.log("La parola " + parolaUtente + " è palindroma");
+};
