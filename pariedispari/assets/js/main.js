@@ -18,4 +18,9 @@ function sommaNumeri(n1, n2) {
 var somma = sommaNumeri(numeroUtente, numeroComputer)
 console.log(somma);
 //Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+if (somma % 2 == 0){
+    console.log("numero pari");
+}else {
+    console.log("numero dispari");
+}
 //Dichiariamo chi ha vinto.
